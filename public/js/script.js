@@ -90,6 +90,67 @@ const tweet1= {
     console.log('Notify folks!', n);
   }
   
+  // Functions
+// Defining functions
+function login(usrname,pswd) {
+  if (usrname == 'busolatom' && pswd === '1234') {
+    return 'User is logged in';
+  } else {
+    return "Invalid username or password";
+  }
+} 
+// Invoking functions
+login('busolatom','1234');
+
+
+// function loginn(usrname,pswd) {
+//   if (usrname == 'btom' && pswd == '123') {
+//     return 'User is logged in';
+//   } else if (usrname != 'btom') {
+//     return 'Incorrect username';
+//   } else if (pswd != '123') {
+//     return 'Incorrect password';
+//   } else if {
+//     return 'Invalid username or password';
+//   }
+// } 
+
+// loginn('btom','123');
+
+// Basic Arithmetic Operators
+12+34;
+45-10;
+45%2;
+3*9;
+45/2;
+
+// Comparison Operators
+20 === "20";
+20 !== "20";
+20 === 20;
+20 !== 20;
+5 < 10;
+5 > 10;
+5 <= 10;
+5 >= 10;
+  
+//Built-in Maths Functions
+Math.round(42/12);
+Math.floor(42/12);
+Math.trunc(42/12);
+Math.ceil(42/12);
+Math.random();
+Math.max(78,50,129,54,43);
+
+Math.ceil(Math.random() * 1000000);
+
+// Order of operations
+2 * 3 + 4 - 5 / 2 + 2 ** 2;
+
+// Handling user input
+1200 + Number('250');
+
+
   
   
   
