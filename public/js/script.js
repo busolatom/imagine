@@ -150,7 +150,30 @@ Math.ceil(Math.random() * 1000000);
 // Handling user input
 1200 + Number('250');
 
+// String concatenation
+const firstName = "Busola ";
+const lastName = " Tom";
+firstName.trim() + " " + lastName.trim();
 
+// Template literal
+`${firstName.trim()} ${lastName.trim()}`;
+
+// String methods
+firstName.length;
+lastName.length;
+`${firstName.trim()} ${lastName.trim()}`.length;
+(firstName.trim() + " " + lastName.trim()).length;
+firstName.trim().toUpperCase();
+lastName.trim().toUpperCase();
+firstName.trim().toLowerCase();
+lastName.trim().toLowerCase();
+firstName.trim().charAt(1);
+lastName.trim().charCodeAt(2);
+`${firstName.trim().charAt()}.${lastName.trim().charAt()}.`;
+(firstName.trim().charAt() + "." + lastName.trim().charAt() + ".");
+
+// String conversion
+String(2024);
   
   
   
