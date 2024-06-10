@@ -174,6 +174,58 @@ lastName.trim().charCodeAt(2);
 
 // String conversion
 String(2024);
+
+// Write a function that will add a participant to our Google classroom
+function addParticipantToClass(classId, participantEmail) {
+  // Simulates adding a participant to a class
+  // classId: The ID of the class.
+  // participantEmail: The email address of the participant.
+  console.log(`Participant ${participantEmail} added to class ${classId}`);
+  // sending mail notification
+  console.log(`Sending notification to ${participantEmail} about joining class ${classId}`);
+}
+// Example usage
+const classId = "AlphaCohort2";
+const participantEmail = "busola@email.com";
+addParticipantToClass(classId, participantEmail);
+
+
+const participants = [];
+function addParticipant(email) {
+  // Check if email was provided
+  if (!email) {
+    return "Email not provided!";
+  }
+  // Check if email is valid
+  if (!email.includes('@')) {
+    return "Invalid email";
+  }
+  // add email to the participants
+  participants.push(email);
+  // notify them via email
+  // return response
+  return "Participant added";
+}
+addParticipant();
+
+
+function addClassParticipant(Id, Email) {
+  // Simulates adding a participant to a class
+  const message = `Participant ${Email} added to class ${Id}. Sending notification to ${Email} about joining class ${Id}.`;
+  return message; // This line returns the success message
+}
+
+// Example usage
+const Id = "AlphaCohort2";
+const Email = "busola@email.com";
+addClassParticipant(Id, Email);
+
+// Javascript Array Methods
+const alphabets = ['A', 'B', 'C', 'D'];
+alphabets;
+alphabets.join(' ');
+alphabets.join(' ').split(' ');
+
   
   
   
