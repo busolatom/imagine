@@ -227,10 +227,85 @@ alphabets.join(' ');
 alphabets.join(' ').split(' ');
 
   
+// Write a function that will take first name, last name and return full name with variable and concatenation
+function fullname(firstn, lastn) {
+  const fullname = firstn + ' ' + lastn;
+  return fullname;
+}
+const firstn = 'Busola';
+const lastn = 'Tom';
+fullname(firstn, lastn);
+
+// Write a function that will take first name, last name and return full name with template literals
+function fullnme(firstnm, lastnm) {
+ return `${firstnm} ${lastnm}`;
+}
+fullnme('Busola', 'Tom');
+
+// Write a function that will take a user with first name, last name and return full name
+const user = {
+firste: 'Busola',
+laste: 'Tom'
+}
+function full(user) {
+  return `${user.firste} ${user.laste}`;
+}
+full(user);
+
+// Array map
+const users = [
+  {firste: 'Linda', laste: 'Parker'},
+  {firste: 'Joel', laste: 'Duke'},
+  {firste: 'Esther', laste: 'Kwashie'},
+  {firste: 'Michael', laste: 'Hammond'},
+  {firste: 'Theresa', laste: 'Swaris'},
+  {firste: 'Elon', laste: 'Musk'},
+]
+users.map(full);
+
+// Write a function that will take a user with first name, last name and return full name also spread first name and last name
+const user = {
+  firste: 'Busola',
+  laste: 'Tom',
+}
+function full(user) {
+    return {
+      // ... means spread user 
+      ...user, 
+      full: `${user.firste} ${user.laste}`
+    }
+}
+full(user);
+
+// Array map
+const users = [
+  {firste: 'Linda', laste: 'Parker'},
+  {firste: 'Joel', laste: 'Duke'},
+  {firste: 'Esther', laste: 'Kwashie'},
+  {firste: 'Michael', laste: 'Hammond'},
+  {firste: 'Theresa', laste: 'Swaris'},
+  {firste: 'Elon', laste: 'Musk'},
+]
+users.map(full);
   
+  // Array map- return square of numbers
+function square(number) {
+  return number ** 2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square);
   
-  
-  
+  // Filter and return even numbers
+function even(number) {
+  return number % 2 === 0;
+}
+numbers.filter(even);
+
+// Filter and return odd numbers
+function odd(number) {
+  return number % 2 === 1;
+}
+numbers.filter(odd);
   
   
   
