@@ -307,7 +307,68 @@ function odd(number) {
 }
 numbers.filter(odd);
   
-  
+  // Write a function that takes a user with name and dateOfBirth and returns true if their birthday is today else false
+const user4 = {
+  name: 'Martin King',
+  dateOfBirth: '12 June 1883'
+}
+function isBirthday(user4) {
+  const today = new Date();
+  const birthDate = new Date(user4.dateOfBirth);
+  console.log (birthDate.getDay());
+  // const birthDay = birthDate.getDay();
+  // Birth Date and birth month check
+  if (birthDate.getMonth() === today.getMonth() && birthDate.getDate() === today.getDate()) {
+     return true;
+  }
+ else {
+    return false;
+ }
+}
+isBirthday(user4);
+
+// Write a function that takes a user with name and dateOfBirth and returns Happy Birthday with their name if their birthday is today else not your day
+function birthdayGreeting(user4) {
+  if (isBirthday(user4)) {
+    // return 'Happy Birthday' + " " + user4.name;
+    return `Happy Birthday ${user4.name}`;
+  }
+  else {
+    return 'Not your day';
+  }
+}
+birthdayGreeting(user4);
+
+// A function that tells user the weekday of their birthday only when it is their birthday
+function birthDay(user4) {
+  const birthDate = new Date(user4.dateOfBirth);
+  const weekDay = birthDate.getDay();
+  if (isBirthday(user4) && weekDay === 0) {
+    return 'Your birthday istoday, Monday';
+  }
+   if (isBirthday(user4) && weekDay === 1) {
+    return 'Your birthday is today, Tuesday';
+  }
+   if (isBirthday(user4) && weekDay === 2) {
+    return 'Your birthday is today, Wednesday';
+  }
+   if (isBirthday(user4) && weekDay === 3) {
+    return 'Your birthday is today, Thursday';
+  }
+   if (isBirthday(user4) && weekDay === 4) {
+    return 'Your birthday is today, Friday';
+  }
+   if (isBirthday(user4) && weekDay === 5) {
+    return 'Your birthday is today, Saturday';
+  }
+   if (isBirthday(user4) && weekDay === 6) {
+    return 'Your birthday is today, Sunday';
+  }
+  else {
+    return 'Your birthday is still loading...';
+  }
+}
+birthDay(user4);
   
   
   
