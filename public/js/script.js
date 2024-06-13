@@ -201,7 +201,7 @@ function addParticipant(email) {
     return "Invalid email";
   }
   // add email to the participants
-  participants.push(email);
+  participants.pgush(email);
   // notify them via email
   // return response
   return "Participant added";
@@ -369,6 +369,31 @@ function birthDay(user4) {
   }
 }
 birthDay(user4);
+
+
+// Bottle class
+class Bottle {
+  constructor(color, shape, volume) {
+    this.color = color;
+    this.shape = shape;
+    this.volume = volume;
+  } 
+  // functions living inside an object are called methods and are declared without the function keyword. Functions created inside an object cannot be used outside it and you always have to create instance of the object before you can call/ivoke/use the function/method. The class /object template is created to avoid code repetition with multiple objects creation. The this keyword is used to uniquely identify whatever object instance is using the Class Object. In this case we cant use objectname.property because the object is not yet created in the class object template.
+  getInfo() {
+        return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;
+  }
+}
+
+const bottle1 = new Bottle('black', 'circle', 300);
+bottle1.getInfo();
+const bottle2 = new Bottle('pink', 'rectangle', 500);
+bottle2.getInfo();
+const bottle3 = new Bottle('green', 'triangle', 200);
+bottle3.getInfo();
+
+
+
+
   
   
   
